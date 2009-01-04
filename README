@@ -1,0 +1,22 @@
+tmpc - tray/terrible/tremendous music player client
+Author: Gavin Gilmour <gavin(at)brokentrain.net>
+Date: 08/09/06
+=============
+
+About:
+
+	* tmpc aims to be a windowless, tray-based application focusing on various
+	  aspects of last.fm integration. 
+
+Requirements:
+
+	* 'Universal Feed Parser' (http://www.feedparser.org)
+
+Installation:
+
+	* Extract the tarball somewhere
+	* Execute 'tmpc.py' either with ./tmpc.py or python tmpc.py
+
+Contact:
+
+	* Please direct any questions/comments/bugs to: gavin(at)brokentrain.net

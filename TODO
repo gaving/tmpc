@@ -1,0 +1,64 @@
+Major/minor TODOS file/changelog reference for tmpc
+$Id: TODO 12 2006-11-05 17:20:20Z gavin $
+
+Silly Key:
+	[x] - Complete
+	[_] - Incomplete
+	[/] - Partially completed/buggy
+	[!] - Removed/deferred.
+
+0.1
+	[x] Show popup on hover
+	[x] Correct position for popups
+	[x] Tray item for close
+	[x] Tray item for status changes
+	[x]	Show cover on popup
+		- [!] Check for multiple local image extensions? (Currently: Folder.jpg)
+		- [x] Fetch album covers off lastfm instead
+	  	- [/] Adjust timeout on grabbing covers (slow lastfm stalls popup.) (Untested.)
+	  	- [_] Ignore http://static.last.fm/depth/catalogue/no_album_large.gif
+		- [_] Monitor failed tries and cease further attempts
+		- [!] Thread up (no point, popup needs to be displayed with the image)
+			- Fake popup while it's fetching and switch them?
+	[/] Add actions to popup
+		- [_] 'Edit Tag' => Fire up cowbell?
+		- [_] 'Play Album' => Enqueue or play?
+		- [!] 'Copy Track' => Copy current title + artist to clipboard
+	[x] Hypertext links for last.fm?
+	[x] Show recent tracks from last.fm on menu
+		- [x] Do this locally instead?
+		- [x] Read last.fm recent tracks and add them upon startup
+	[!] Integrate top tracks (use lastfm?, huh?)
+	[/] Add what friends are listening to!
+		- [x] Try and link up what they are playing with local tracks
+		- [_] Start the fetch as soon as the app starts, then sleep
+		- [_] Hibernate for ages on any sign of network failure
+	[x] Fancy theme mime type icons instead of stock
+	[x] Disable "recent tracks menu" when nothing to display
+	[x] Use glade?
+		- [x] Lyrics window
+	[x] Indicate the state by the tray, shuffle icon for random, repeat for repeat etc.
+		- [x] Update db too.
+	[x] Use scroll wheel up/down to seek around current track
+	[x] Lyrics functionality instead of 'copy'
+		- [x] Use lyricwiki.org
+		- [x] Handle failures gracefully
+		- [!] Parse wikis <lyric> tag too
+		- [!] Submission?
+		- [x] Use the SOAP api instead of raw parsing
+		- [!] Save lyrics locally and allow editing
+	[_] Major tidy up
+
+0.2+
+	[_] Use DBUS instead for song change events?
+		- Hack mpd to send event?
+	[_] Do something with artist image?
+	[_] Turn debug output into a fully fledged log viewer
+	[_] Configuration page for last.fm details
+		- [_] Account details
+		- [_] Disable functionality entirely
+	[_] Genre menu?
+	[_] Hotkey support
+	[_] Expand 'Lyrics' window into general info window
+	[_] Allow custom popup markup
+	...
